@@ -13,7 +13,7 @@ class App extends Component {
       tweets: [
         {
           text: "Hello",
-          liked: true
+          liked: false
         },
         {
           text: "World",
@@ -52,7 +52,7 @@ class App extends Component {
   handleDelete(tweet) {
     let tweets = this.state.tweets;
     for (let i = 0; i < tweets.length; i++) {
-      if (tweets[i].text = tweet.text) {
+      if (tweets[i].text == tweet.text) {
         tweets.splice(i, 1);
         break;
       }
