@@ -5,11 +5,11 @@ class Tweet extends Component {
         let tweet = this.props.tweet;
         return (
             <div>
-                {tweet.text};
-                <br/>
+                {tweet.text}
+                <br />
                 <a href="#" onClick={() => this.props.handleLike(tweet)}>
                     {tweet.liked ? 'Unlike' : 'Like'} Post</a>
-                <button href="#" onClick={() => this.props.handleDelete(tweet)} 
+                <button href="#" onClick={() => this.props.handleDelete(tweet)}
                     type="button">Delete</button>
             </div>
         )
